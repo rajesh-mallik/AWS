@@ -4,9 +4,9 @@ Generate Git security credentials for the user and download them.
 
 2. Create Service Roles
 
-For CodeDeploy: SimplilearnH100CodeDeployRole.
+For CodeDeploy: create a CodeDeployRole.
 
-For EC2 (to download CodeDeploy agent from S3): SimplilearnH100Ec2ToS3Role.
+For EC2 (to download CodeDeploy agent from S3): Ec2 To S3 Role create.
 
 3. Install and Configure Git
 
