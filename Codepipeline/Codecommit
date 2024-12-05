@@ -1,0 +1,37 @@
+1. Assign CodeCommit/CodePipeline Full Access (create a User).
+
+Generate Git security credentials for the user and download them.
+
+2. Create Service Roles
+
+For CodeDeploy: SimplilearnH100CodeDeployRole.
+
+For EC2 (to download CodeDeploy agent from S3): SimplilearnH100Ec2ToS3Role.
+
+3. Install and Configure Git
+
+Download and install Git.
+
+Optionally, configure Git locally.
+
+4. CodeCommit Repository
+
+Create a repository in CodeCommit.
+
+Clone the repository using the command:
+
+git clone "<repository URL>"
+
+5. Set Up an EC2 Machine
+
+Launch an EC2 instance (Linux).
+
+Assign the RetailEc2ToS3Read role to the instance.
+
+Tag the instance (these tags will be used by CodeDeploy).
+
+6. CodeDeploy Application
+
+Create a new application in CodeDeploy.
+
+Define deployment groups for the application.
